@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./logo.png">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">Rock Paper Scissors</h1>
+    </header>
+    <div class="container">
+        <div class="score-container center">
+            <span class="score-item user center">YOU</span>
+            <span id="score">0 - 0</span>
+            <span class="score-item computer center">COMPUTER</span>
+        </div>
+        <div class="buttons">
+            <button class="bn" onclick="play(this.value)" value="paper"><i class="far fa-hand-paper"></i></button>
+            <button class="bn" onclick="play(this.value)" value="rock"><i class="far fa-hand-rock"></i></button>
+            <button class="bn" onclick="play(this.value)" value="scissors"><i class="far fa-hand-scissors"></i></button>
+        </div>
+        <div id="challenge">
+            <div class="challenge-result-left" id="yourChoice-wrapper">
+                <div class="center" id="yourChoice"></div>
+                <p>You</p>
+            </div>
+            <div class="center" id="result"></div>
+            <div class="challenge-result-right" id="computerChoice-wrapper">
+                <div class="center" id="computerChoice"></div>
+                <p>Computer</p>
+            </div>
+        </div>
+        <button id="resetScoreButton">Reset Score</button>
+    </div>
+    <p id="footer">Built with &#10084; by <a href="https://www.davidmvenegas.com" target="_blank" rel="noopener noreferrer">David Venegas</a></p>
+
+    <script src="./index.js"></script>
+</body>
+</html>
